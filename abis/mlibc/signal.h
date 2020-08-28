@@ -34,42 +34,41 @@ extern "C" {
 #define SIG_DFL ((__sighandler)(void *)(-2))
 #define SIG_IGN ((__sighandler)(void *)(-3))
 
-#define SIGABRT 1
-#define SIGFPE 2
-#define SIGILL 3
-#define SIGINT 4
-#define SIGSEGV 5
-#define SIGTERM 6
-#define SIGPROF 7
-#define SIGIO 9
-#define SIGPWR 10
-#define SIGRTMIN 11
-#define SIGRTMAX 12
+#define SIGHUP 1
+#define SIGINT 2
+#define SIGQUIT 3
+#define SIGILL 4
+#define SIGTRAP 5
+#define SIGABRT 6
+#define SIGBUS 7
+#define SIGFPE 8
+#define SIGKILL 9
+#define SIGUSR1 10
+#define SIGSEGV 11
+#define SIGUSR2 12
+#define SIGPIPE 13
+#define SIGALRM 14
+#define SIGTERM 15
+#define SIGSTKFLT 16
+#define SIGCHLD 17
+#define SIGCONT 18
+#define SIGSTOP 19
+#define SIGTSTP 20
+#define SIGTTIN 21
+#define SIGTTOU 22
+#define SIGURG 23
+#define SIGXCPU 24
+#define SIGXFSZ 25
+#define SIGVTALRM 26
+#define SIGPROF 27
+#define SIGWINCH 28
+#define SIGPOLL 29
+#define SIGPWR 30
+#define SIGSYS 31
+
+#define SIGUNUSED SIGSYS
 
 #ifdef __MLIBC_POSIX_OPTION
-
-#define SIGALRM 8
-#define SIGBUS 9
-#define SIGCHLD 10
-#define SIGCONT 11
-#define SIGHUP 12
-#define SIGKILL 13
-#define SIGPIPE 14
-#define SIGQUIT 15
-#define SIGSTOP 16
-#define SIGTSTP 17
-#define SIGTTIN 18
-#define SIGTTOU 19
-#define SIGUSR1 20
-#define SIGUSR2 21
-#define SIGSYS 22
-#define SIGTRAP 23
-#define SIGURG 24
-#define SIGVTALRM 25
-#define SIGXCPU 26
-#define SIGXFSZ 27
-#define SIGWINCH 28
-#define SIGUNUSED SIGSYS
 
 #define SA_NOCLDSTOP (1 << 0)
 #define SA_ONSTACK (1 << 1)
